@@ -1,0 +1,35 @@
+void menu(List lista){
+
+    int v, r;
+    while(1){
+
+        printf(" 1 - criar\n"
+        " 2 - vazia\n"
+        " 3 - cheia\n"
+        " 4 - tamanho\n"
+        " 10 - sair \n"
+        );
+
+        scanf("%d", &v);
+
+        switch (v)
+        {
+        case 1:
+            cria(&lista);
+            printf("lista criada\n");
+            break;
+        case 2:
+            vazia(lista);
+            break;
+        case 3:
+            cheia(lista);
+            break;
+        case 4:
+            r = tamanho(lista);
+            printf("%d\n", r);
+            break;
+        case 10:
+            exit(0);
+        }
+    }
+}

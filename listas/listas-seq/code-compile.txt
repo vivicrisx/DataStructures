@@ -1,0 +1,3 @@
+gcc -c main.c -o main.o
+gcc -c lista-seq.c -o lista-seq.o
+gcc main.o lista-seq.o -o lista-seq
